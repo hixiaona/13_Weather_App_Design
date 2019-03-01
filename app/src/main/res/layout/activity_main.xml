@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2495d1"
+    android:orientation="vertical"
+    android:weightSum="8"
+    tools:context="mg.studio.weather.MainActivity">
+
+    <TextView
+        android:id="@+id/sunday"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:text="Sunday"
+        android:textAllCaps="true"
+        android:textColor="#10000000"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_marginTop="10dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/sunday"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:srcCompat="@drawable/notification" />
+
+    <TextView
+        android:id="@+id/tv_news"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:text="You have 1 appointment"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_news"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_gravity="center"
+        android:background="@drawable/button_selector"
+        android:gravity="center"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:layout_margin="8dp"
+        android:text="Go to Calendar"
+        android:textColor="#50ffffff" />
+
+
+    <ImageView
+        android:id="@+id/img_weather_condition"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="48dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:srcCompat="@drawable/rainy_up" />
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Location"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/img_weather_condition"
+        app:layout_constraintLeft_toLeftOf="@+id/img_weather_condition"
+        app:layout_constraintTop_toBottomOf="@+id/img_weather_condition" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="03/03/2018"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/tv_location"
+        app:layout_constraintStart_toStartOf="@+id/tv_location"
+        app:layout_constraintTop_toBottomOf="@+id/tv_location" />
+
+
+    <TextView
+        android:id="@+id/shishu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="18"
+        android:textColor="@android:color/white"
+        android:textSize="100sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@+id/sheshidu"
+        app:layout_constraintRight_toLeftOf="@+id/sheshidu"
+        />
+
+    <TextView
+        android:id="@+id/sheshidu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="48dp"
+        android:layout_marginTop="312dp"
+        android:text="°C"
+        android:textColor="@android:color/white"
+        android:textSize="22sp" />
+
+
+
+
+
+
+    <ImageView
+        android:id="@+id/picture"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="160dp"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/design" />
+
+    <TextView
+        android:id="@+id/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="20000dp"
+        android:layout_height="160dp"
+        android:background="#ffffff"
+
+        />
+
+
+
+
+
+
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/image2"
+        app:layout_constraintTop_toBottomOf="@+id/picture"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/rainy_small" />
+
+    <TextView
+        android:id="@+id/date1"
+        app:layout_constraintTop_toBottomOf="@+id/image1"
+        app:layout_constraintLeft_toLeftOf="@+id/image1"
+
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="mon"
+        android:textAllCaps="true"
+        android:textColor="#909090" />
+
+
+
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_constraintLeft_toRightOf="@+id/image1"
+        app:layout_constraintRight_toLeftOf="@+id/image3"
+        app:layout_constraintTop_toBottomOf="@+id/picture"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/partly_sunny_small" />
+
+    <TextView
+        android:id="@+id/date2"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/image2"
+        app:layout_constraintLeft_toLeftOf="@+id/image2"
+        android:gravity="center"
+        android:text="tue"
+        android:textAllCaps="true"
+        android:textColor="#909090" />
+
+
+
+
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_constraintLeft_toRightOf="@+id/image2"
+        app:layout_constraintRight_toLeftOf="@+id/image4"
+        app:layout_constraintTop_toBottomOf="@+id/picture"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/windy_small" />
+
+    <TextView
+        android:id="@+id/date3"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/image3"
+        app:layout_constraintLeft_toLeftOf="@+id/image3"
+        android:gravity="center"
+        android:text="thu"
+        android:textAllCaps="true"
+        android:textColor="#909090" />
+
+
+
+
+    <ImageView
+        android:id="@+id/image4"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_constraintLeft_toRightOf="@+id/image3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/picture"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/sunny_small" />
+
+    <TextView
+        android:id="@+id/date4"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/image4"
+        app:layout_constraintLeft_toLeftOf="@+id/image4"
+        android:gravity="center"
+        android:text="fri"
+        android:textAllCaps="true"
+        android:textColor="#909090" />
+
+</android.support.constraint.ConstraintLayout>
